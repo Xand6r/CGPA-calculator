@@ -1,0 +1,27 @@
+// imports
+@import '../../../stylesheets/colors';
+@import '../../../stylesheets/utilities';
+@import '../../../stylesheets/fonts';
+
+
+// main styles
+.navigation {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+    font-family: markpro-medium;
+    background: white;
+
+    .navigation__logo{
+        font-size: 29px;
+        color: $light-blue;
+        b{
+            color: $dark-blue;
+        }
+    }
+}
+
+// import breakpoints
+@import './breakpoints';

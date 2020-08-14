@@ -1,0 +1,149 @@
+@import '../../../../stylesheets/colors';
+@import '../../../../stylesheets/utilities';
+
+body{
+    min-width: 800px;
+}
+.expertise{
+    @extend %register-tabs-styles;
+    padding: 70px 150px;
+
+    &__heading{
+        margin-bottom: 50px;
+        &__header{
+            font-weight: bold;
+            font-family: 'markpro-bold';
+            color: $dark-blue;
+            color:red !important;
+            @extend %twentyeightpx;
+        }
+    }
+    .personaldetails__heading__header{
+        font-weight: bold;
+        font-family: 'markpro-bold';
+        color: $dark-blue;
+        @extend %twentyeightpx;
+        margin-bottom: 20px;
+    }
+    
+    &__formsection{
+        display: flex;
+        flex-direction: column;
+
+        &__section{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 65px;
+
+            &:last-of-type{
+                margin-bottom: 50px;
+            }
+
+            &__header{
+                margin-bottom: 20px;
+                .--heading{
+                    @extend %eighteenpx;
+                    margin-bottom: 3px;
+                    font-family: 'markpro-medium';
+                    color: $dark-blue;
+                }
+                .--sub_heading{
+                    @extend %tenpx;
+                    font-family: 'markpro-medium';
+                    color: $grey;
+                }
+            }
+
+            &__form{
+                box-sizing: border-box;
+                background: #F7F8FC;
+                border-radius: 10px;
+                width: 100%;
+                padding: 27px 42px 40px;
+                @extend %input-date;
+                margin-bottom: 25px;
+
+                .--input_wrapper{
+                    margin-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
+
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                    label{
+                        @extend %fourteenpx;
+                        color:$grey;
+                        margin-bottom: 10px;
+                        text-transform: capitalize;
+                        font-family: 'markpro-medium';
+                        &.double{
+                            display: flex;
+                            flex-direction: column;
+                            color: $dark-blue;
+                            span{
+                                margin-top: 7px;
+                                color: $grey;
+                                @extend %tenpx;
+                            }
+                        }
+                    }
+
+                    input{
+                        @extend %input-styles;
+                        @extend %sixteenpx;
+                        border: 1px solid #CDD1DE;
+                        background-color: white;
+                        max-width: 360px;
+                        height: 50px;
+                    }
+                    .--date_wrapper{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        input{
+                            max-width: 40%;
+                            min-width: 60px;
+                        }
+                        span{
+                            font-family: 'markpro-medium';
+                            color: $grey;
+                            @extend %fourteenpx;
+                        }
+                    }
+                }
+            }
+
+            &__footer{
+                cursor: pointer;
+                color: $light-blue;
+                img{
+                    margin-right: 10px;
+                }
+                span{
+                    @extend %fourteenpx;
+                    font-family:'markpro-medium';
+                }
+            }
+        }
+    }
+
+    &__footer{
+        width: 360px;
+        margin: 0 auto;
+        .--button_group{
+            display: flex;
+            justify-content: center;
+            max-width: 360px;
+
+            .next{
+                @extend %filled-button;
+                width: 108.22px;
+                height: 50px;
+                background: $light-blue;
+                font-family: 'markpro-bold';
+                color: white
+            }
+        }
+    }
+}
