@@ -11,7 +11,9 @@ export default function Register() {
     return (
         <div className="register">
             {/* the navigation bar component */}
-            <NavBar />
+            <div className="navbar">
+                <NavBar />
+            </div>
             {/* the navigation bar component */}
 
             {/* the section actually showing the mail content */}

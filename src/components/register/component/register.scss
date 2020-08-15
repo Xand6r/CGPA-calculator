@@ -2,6 +2,10 @@
 @import '../../../stylesheets/colors';
 @import '../../../stylesheets/utilities';
 
+.navbar{
+    position: sticky;
+    top:0;
+}
 .register{
     background: $background;
     min-height: 100vh;
